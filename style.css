@@ -58,6 +58,7 @@
     height:auto;
     background-color:#6c8ba8 ;
     margin-top: 10px;
+    padding-top: 30px;
     text-align: center;
 }
 .heading{
@@ -65,7 +66,7 @@
     background-color: rgb(255, 255, 255);
     text-decoration: underline;
     text-decoration-color: rgb(152, 152, 152);
-    margin-top: 10px;
+    color: rgb(84, 83, 83);
 }
 .about-cont{
     margin-top: 30px;
@@ -76,5 +77,32 @@
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 30px;
+}
+#myskill{
+    background-color:#506c86 ;
+    height: auto;
+    text-align: center;
+    margin-top:10px ;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.skillphoto{
+    /* padding-bottom: 30px; */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding-top: 30px;
+}
+img{
+    background-size: cover;
+    width:200px;
+    height: 200px;
+}
+.photodiv p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
 }
 
