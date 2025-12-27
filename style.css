@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    border: border-box;
+    padding: 0%;
+}
+.navbar{
+    height: 3em;
+    background-color: #8eb1c7;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.navbar a:hover{
+    border-bottom: 2px solid white;
+}
