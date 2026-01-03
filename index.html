@@ -5,81 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
    <header>
-    <div class="navbar">
+    <nav class="navbar">
         <a href="#home" > Home</a>
         <a href="#about" >About</a>
         <a href="#myskill">My Skills</a>
         <a href="#projects">Projects</a>
         <a href="#education" >Education</a>
         <a href="#contact">Contact</a>
-    </div>
+    </nav>
     <div id="home">
-        <div class="home-con">
-            <div class="hiline">Hi, I'm Zarmeena Faheem</div>
-            A Student Web Development learning<br>
-            <b>HTML,CSS,Javascript</b> and building responsive websites.
-            <div class="specialbutton"><a href="#">Download Resume</a>
-            </div>
-        </div>
-        <div class="myphoto"> <img src="myphoto.jpeg" alt="profile pic">
-        </div>
+        <article class="home-con">
+            <h3 class="hiline">Hi, I'm Zarmeena Faheem</h3>
+            <p>A Student Web Development learning<br>
+            <b>HTML,CSS,Javascript</b> and building responsive websites.</p>
+            <a href="#" class="specialbutton">Download Resume</a>
+        </article>
+        <figure class="myphoto"> <img src="myphoto.jpeg" alt="profile pic"></figure>
     </div>
    </header> 
    <main>
     <section id="about">
         <h2  class="heading">  About Me  </h2>
-        <div class="about-cont">I'm a first year student of BCA at Invertis University learning coding and technology eager to learn several other new things to attain expertise in this feild.I want to become a Software developer currently i am focusing on some Frontend Developmet skills starting from learning Html to CSS , Javascript and many more things.Apart from this i am also good at communication as i was a literary secretary at my school and also i was given the title of the Oratory icon of the batch 2024-25. I beleive that one should never give up on their dreams and goals because if you would show some energy and enthusiasm then only the target and goals could be achieved try your best and still things don't work out take it as a lesson for future.my only Mantra to success which i believe should be everyone's is Discipline and Punctuality.</div>
+        <p class="about-cont">I am a first-year BCA student at Invertis University with a strong interest in coding and technology. I aspire to become a software developer and am currently focusing on frontend development, learning HTML, CSS, and JavaScript.
+
+Along with technical skills, I have strong communication abilities. I served as the Literary Secretary at my school and was honored as the “Oratory Icon of the Batch 2024–25.” I believe in staying disciplined and punctual, giving my best effort, and learning from every experience on the journey toward my goals.</p>
         
     </section>
     <section id="myskill">
         <h2 class="heading"> My Skills </h2>
         <div class="skillphoto">
-            <div class="photodiv"><img src="htmlpic.png" alt="HTML logo" ><p>HTML</p></div>
-            <div class="photodiv"><img src="csspic.png" alt="CSS logo"><p>CSS</p></div>
-            <div class="photodiv"><img src="git.png" alt="git logo"><p>Git</p></div>
-            <div class="photodiv"><img src="GitHub-Logo.png" alt="github logo"><p>Github</p></div>
-            <div class="photodiv"><img src="pexels-icsa-833425-1708912.jpg" alt="skill image"><p>Public Speaking</p></div>
+            <figure class="photodiv"><img src="htmlpic.png" alt="HTML logo" ><figcaption>HTML</figcaption></figure>
+            <figure class="photodiv"><img src="csspic.png" alt="CSS logo"><figcaption>CSS</figcaption></figure>
+            <figure class="photodiv"><img src="git.png" alt="git logo"><figcaption>Git</figcaption></figure>
+            <figure class="photodiv"><img src="GitHub-Logo.png" alt="github logo"><figcaption>Github</figcaption></figure>
+            <figure class="photodiv"><img src="pexels-icsa-833425-1708912.jpg" alt="skill image"><figcaption>Public Speaking</figcaption></figure>
         </div>
     </section>
     <section id="projects">
         <h2 class="heading"> Projects </h2>
         <div class="pjctmenu">
-            <div class="projecti"><img src="portfolio.jpg">
-                <div class="topline">HTML,CSS</div>
-                A beginner level Personal portfolio
+            <figure class="projecti"><img src="clone1.png">
+                <figcaption><h3>Amazon Website clone</h3><span>HTML,CSS</span></figcaption>
                 <div class="buttonline">
-                <div class="specialbutton"><a href="#" > View Code</a></div>
-                </div>
-            </div>
-            <div class="projecti"><img src="clone1.png">
-                <div class="topline">HTML,CSS</div>
-                Basic Amazon Website clone
-                <div class="buttonline">
-                <div class="specialbutton"><a href="#" > View Code</a></div>     
-                </div>
-            </div>
+                <a href="#" class="specialbutton"> View Code</a></div>      
+            </figure>
         </div>
     </section>
     <section id="education">
         <h2 class="heading"><i class="fa-solid fa-graduation-cap"></i>Education</h2>
-        <div class="about-cont">
-            <ul>
-                <li><b>Bachelor's of Computer Application, Invertis University </b>| Currently Studying</li>
-                <li><b>Senior Secondary Education from Commerce stream with Mathematics and Computer Science, St.Mary's Senior Seconndary School</b></li>
+            <ul class="about-cont list">
+                <li><strong>Bachelor of Computer Application, Invertis University </strong>| Currently Studying</li>
+                <li><strong>Senior Secondary Education from Commerce stream with Mathematics and Computer Science, St.Mary's Senior Secondary School</strong></li>
             </ul> 
-        </div>
     </section>
     <section id="contact">
         <h2 class="heading">Get in Touch</h2>
         <div class="about-cont spaceeven">
-            <div class="specialbutton"><a href="" ><i class="fa-brands fa-github"></i> Github</a></div> 
-            <div class="specialbutton"><a href=""><i class="fa-brands fa-linkedin"></i> Linkedin </a></div> 
+            <a href="" class="specialbutton"><i class="fa-brands fa-github"></i> Github</a>
+            <a href="https://www.linkedin.com/in/zarmeena-faheem-68a088380/" target="_blank" class="specialbutton"><i class="fa-brands fa-linkedin"></i> Linkedin </a>
         </div>
     </section>
    </main>
+   <footer>
+    <div class="copyright">
+        <p><i class="fa-regular fa-copyright"></i><b>2025 Zarmeena Faheem</b> | built with HTML and CSS</p>
+    </div>
+   </footer>
 </body>
 </html>

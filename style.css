@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    border: border-box;
+    box-sizing: border-box;
     padding: 0%;
 }
 body{
@@ -9,13 +9,12 @@ body{
 }
 
 .navbar{
-    height: 2.5rem;
+    height: 2.5em;
     background-color:#111827;
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:space-evenly;}
 
-}
 .navbar a{
     color:#D1D5DB;
     text-decoration: none;
@@ -33,9 +32,9 @@ body{
     color:#D1D5DB;
 }
 .myphoto img{
-    background-size: cover;
-    height: 9rem;
-    width:9rem;
+    object-fit: cover;
+    height: 10rem;
+    width: 10rem;
     border: 15px solid #A78BFA;
     border-radius: 50%;
 }
@@ -44,15 +43,15 @@ body{
 
 }
 .hiline{
-    font-size: 2rem;
-    font-weight:300 ;
-    margin-bottom: 20px;
+    font-weight:400 ;
+    margin-bottom: 10px;
     color:#A78BFA;
 }
-.specialbutton a{
+.specialbutton {
     font-size: 0.9rem;
     height:2rem;
     width:10rem;
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +61,7 @@ body{
     color:#111827;
     text-decoration: none;
 }
-.specialbutton a:hover{
+.specialbutton:hover{
     background-color:#8B5CF6;
 }
 #about{
@@ -98,27 +97,33 @@ body{
     padding-bottom: 30px;
 }
 .skillphoto{
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 30px auto 0;
 }
 .photodiv{
     background-color:#1F2937;
     padding:20px;
     border-radius:12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
  .photodiv img{
+    width: 100%;
+    max-width: 160px;
+    aspect-ratio: 1 / 1;
+    /* object-fit: cover; */
     background-size: cover;
-    width:200px;
-    height: 200px;
+    margin-bottom: 10px;
 }
-.photodiv p{
-    font-size: 1.2rem;
-    font-weight: 400;
-     color:#C7D2FE;
+.photodiv figcaption {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #C7D2FE;
 }
 #projects{
     padding-top: 30px;
@@ -129,27 +134,32 @@ body{
 }
 .pjctmenu{
     padding:20px;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,400px));
+    gap: 20px;
     justify-content: center;
 }
 .projecti{
     height: auto;
-    width:400px;
-     background-color:#1F2937;
+    width:100%;
+    background-color:#1F2937;
     color:#D1D5DB;
-    margin-right: 20px;
     border-radius: 10px;
     padding-bottom: 20px;
     
 }
  img{
     background-size: cover;
-    height:200px;
-    width:400px;
+    width:100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 
+}
+.about-cont.list {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    list-style: none;
 }
 .buttonline{
     display: flex;
@@ -164,9 +174,6 @@ body{
     height: auto;
     text-align: center;
 }
-.about-cont ul{
-    list-style: none ;  
-}
  #contact{
      padding-top: 30px;
     padding-bottom: 30px;
@@ -177,4 +184,61 @@ body{
  .spaceeven{
     display: flex;
     justify-content: space-evenly;
+}
+.copyright{
+    background-color:#1F2937 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 30px;
+}
+@media only screen and (max-width: 768px) {
+        .skillphoto {
+        gap: 18px;
+    }
+    .pjctmenu{
+         gap: 15px;
+   
+}
+}
+@media only screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+    }
+
+    .skillphoto{
+        grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+
+    }
+    .photodiv {
+        padding: 16px;
+    }
+
+    .photodiv figcaption {
+        font-size: 0.95rem;
+    }
+     .myphoto img{
+    height: 7rem;
+    width: 7rem;
+    border: 9px solid #A78BFA;
+    }
+    .home-con{
+        font-size: 0.9rem;
+    }
+    .specialbutton{
+        font-size: 0.7rem;
+        height:1.2rem;
+        width:7rem;
+        border-radius: 5px;
+    }
+    .about-cont{
+        font-size: 0.9rem;
+    }
+    .pjctmenu{
+         grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+         gap: 10px;
+    }
 }
